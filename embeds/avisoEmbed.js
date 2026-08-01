@@ -1,4 +1,4 @@
-import { registrarLog } from "./registrarLog.js";
+import { registrarLog } from "../utils/registrarLog.js";
 import config from "../config/config.js";
 
 
