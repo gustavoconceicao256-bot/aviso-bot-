@@ -36,25 +36,20 @@ export function criarLogEmbed(dados){
 👤 **Responsável:**
 ${dados.responsavel}
 
-
 📨 **Membros:**
 ${dados.total}
-
 
 ✅ **Enviados:**
 ${dados.enviados}
 
-
 ⚠️ **Falhas:**
 ${dados.falhas}
-
 
 📝 **Aviso:**
 ${dados.aviso}
 `
 
     )
-
 
     .setFooter({
 
