@@ -1,1 +1,14 @@
-
+{
+  "name": "aviso-bot-gtt",
+  "version": "1.0.0",
+  "description": "Sistema oficial de avisos GTT Discord",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
