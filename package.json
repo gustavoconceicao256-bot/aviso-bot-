@@ -1,7 +1,7 @@
 {
   "name": "aviso-bot-gtt",
   "version": "1.0.0",
-  "description": "Sistema oficial de avisos GTT Discord",
+  "description": "Bot oficial de avisos GTT",
   "main": "index.js",
   "type": "module",
   "scripts": {
