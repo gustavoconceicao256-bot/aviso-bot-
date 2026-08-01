@@ -3,7 +3,7 @@ import { registrarLog } from "./registrarLog.js";
 import config from "../config/config.js";
 
 
-export async function enviarAvisos(guild, texto){
+export async function enviarAvisos(guild, texto, responsavel){
 
 
     let enviados = 0;
@@ -68,8 +68,11 @@ export async function enviarAvisos(guild, texto){
 
 
             console.error(
+
                 "Erro enviando DM:",
+
                 membro.user.tag
+
             );
 
 
@@ -86,18 +89,24 @@ export async function enviarAvisos(guild, texto){
 
     await registrarLog({
 
+
         guild,
 
-        responsavel:
-        "Sistema",
+
+        responsavel,
+
 
         total,
 
+
         enviados,
+
 
         falhas,
 
+
         aviso:texto
+
 
     });
 
