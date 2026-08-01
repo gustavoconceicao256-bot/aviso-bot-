@@ -54,14 +54,55 @@ const client = new Client({
 
 client.once(
     "ready",
-    () => ready(client)
+    () => {
+
+        ready(client);
+
+
+        // ===============================
+        // STATUS DO BOT
+        // ===============================
+
+        client.user.setActivity(
+            "Sistema Oficial de Comunicados",
+            {
+                type: 3
+            }
+        );
+
+
+        console.log(
+            "💓 Sistema de atividade iniciado"
+        );
+
+
+    }
 );
+
 
 
 client.on(
     "interactionCreate",
     interaction => interactionCreate(interaction, client)
 );
+
+
+
+// ===============================
+// KEEP ALIVE INTERNO
+// ===============================
+
+setInterval(()=>{
+
+
+    console.log(
+        "💚 Bot ativo:",
+        new Date().toLocaleString()
+    );
+
+
+},60000);
+
 
 
 // ===============================
