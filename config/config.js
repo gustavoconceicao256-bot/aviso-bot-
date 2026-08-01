@@ -25,16 +25,14 @@ export default {
 
 
 
-    gifBanner:
+   gifBanner:
 
-    "https://i.imgur.com/panFF7o.gif",
+"https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
 
 
+gifThumbnail:
 
-    gifThumbnail:
-
-    "https://i.imgur.com/panFF7o.gif",
-
+"https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
 
 
     conviteServidor:
