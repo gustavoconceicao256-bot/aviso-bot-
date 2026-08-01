@@ -19,20 +19,28 @@ export default {
 
 
 
+    canalAvisos:
+
+    "1460375603621527558",
+
+
+
     corEmbed:
 
     "#7C3AED",
 
 
 
-   gifBanner:
+    gifBanner:
 
-"https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
+    "https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
 
 
-gifThumbnail:
 
-"https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
+    gifThumbnail:
+
+    "https://cdn.discordapp.com/attachments/1522051042345357483/1527231255475785808/lv_0_20260716053044.gif?ex=6a6f0071&is=6a6daef1&hm=a831d26da277b3cc4c083b6daf377fb9947a0b50e9f12ae6208e834f4c733cfb",
+
 
 
     conviteServidor:
