@@ -1,52 +1,33 @@
-import {
-    Client,
-    GatewayIntentBits,
-    Collection
-} from "discord.js";
-
+import { Client, GatewayIntentBits } from "discord.js";
 import dotenv from "dotenv";
-
-import ready from "./events/ready.js";
-import interactionCreate from "./events/interactionCreate.js";
-
+import express from "express";
 
 dotenv.config();
 
+const app = express();
 
-const client = new Client({
+app.get("/", (req, res) => {
+    res.send("Bot AVISO FAC GTT online");
+});
 
-    intents:[
-
-        GatewayIntentBits.Guilds,
-
-        GatewayIntentBits.GuildMembers,
-
-        GatewayIntentBits.DirectMessages
-
-    ]
-
+app.listen(process.env.PORT || 3000, () => {
+    console.log("🌐 Servidor web iniciado");
 });
 
 
-
-client.commands = new Collection();
-
-
-
-client.once(
-    "ready",
-    () => ready(client)
-);
-
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent
+    ]
+});
 
 
-client.on(
-    "interactionCreate",
-    interaction => interactionCreate(interaction, client)
-);
+client.once("ready", () => {
+    console.log(`✅ ${client.user.tag} online`);
+});
 
 
-
-client.login(
-    process.env.TOKEN
-);
+client.login(process.env.TOKEN);
