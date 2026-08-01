@@ -45,7 +45,22 @@ export default {
 
     nomeServidor:
 
-    "FAC GTT"
+    "FAC GTT",
+
+
+
+    // ===============================
+    // SISTEMA DE TESTE
+    // ===============================
+
+    MODO_TESTE:
+
+    true,
+
+
+    USUARIO_TESTE:
+
+    "1320485256045920348"
 
 
 };
