@@ -27,6 +27,10 @@ try {
 
 
 
+    // ===============================
+    // COMANDO /avisospv
+    // ===============================
+
     if(interaction.isChatInputCommand()){
 
 
@@ -43,7 +47,7 @@ try {
 
 
             // ===============================
-            // VERIFICA CANAL PERMITIDO
+            // VERIFICA CANAL DE AVISOS
             // ===============================
 
             if(interaction.channel.id !== config.canalAvisos){
@@ -73,7 +77,7 @@ try {
                 return interaction.reply({
 
                     content:
-                    "Você não possui permissão para usar este sistema.",
+                    "❌ Você não possui permissão para usar este sistema.",
 
                     ephemeral:true
 
@@ -83,6 +87,10 @@ try {
             }
 
 
+
+            // ===============================
+            // ABRE MODAL
+            // ===============================
 
             const modal = new ModalBuilder()
 
@@ -137,6 +145,10 @@ try {
 
 
 
+    // ===============================
+    // ENVIO DO MODAL
+    // ===============================
+
     if(interaction.isModalSubmit()){
 
 
@@ -175,7 +187,7 @@ try {
 
                 content:
 
-                `✅ Aviso enviado!\n\n`+
+                `✅ Aviso enviado com sucesso!\n\n`+
 
                 `📨 Total: ${resultado.total}\n`+
 
@@ -198,8 +210,11 @@ try {
 
 
     console.error(
+
         "ERRO interactionCreate:",
+
         error
+
     );
 
 
@@ -210,6 +225,7 @@ try {
         await interaction.reply({
 
             content:
+
             "❌ Ocorreu um erro ao executar o sistema.",
 
             ephemeral:true
