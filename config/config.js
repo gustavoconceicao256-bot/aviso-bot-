@@ -59,10 +59,10 @@ export default {
     // SISTEMA DE TESTE
     // ===============================
 
-    MODO_TESTE:
+    MODO_TESTE: true,
 
-    true
 
+    // Seu ID do Discord
 
     USUARIO_TESTE:
 
