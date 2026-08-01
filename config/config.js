@@ -6,8 +6,8 @@ export default {
         "1521984073969569883",
         "1522086542716305548",
         "1522086730008629289",
-        "1460499655640092780",
-        "1460375600681324668"
+        "1460375600681324668",
+        "1460499655640092780"
 
     ],
 
@@ -27,13 +27,13 @@ export default {
 
     gifBanner:
 
-    "https://imgur.com/panFF7o",
+    "https://i.imgur.com/panFF7o.gif",
 
 
 
     gifThumbnail:
 
-    "https://imgur.com/panFF7o",
+    "https://i.imgur.com/panFF7o.gif",
 
 
 
