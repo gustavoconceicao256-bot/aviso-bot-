@@ -61,7 +61,7 @@ export default {
 
     MODO_TESTE:
 
-    true,
+    false,
 
 
     USUARIO_TESTE:
