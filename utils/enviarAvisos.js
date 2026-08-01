@@ -1,5 +1,5 @@
 
-import { criarAvisoEmbed } from "../Embeds/avisoEmbed.js";
+import { criarAvisoEmbed } from "../embeds/avisoEmbed.js";
 import { registrarLog } from "./registrarLog.js";
 
 
