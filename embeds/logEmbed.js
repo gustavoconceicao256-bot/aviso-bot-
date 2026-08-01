@@ -1,4 +1,3 @@
-
 import {
     EmbedBuilder
 } from "discord.js";
@@ -11,51 +10,57 @@ import config from "../config/config.js";
 export function criarLogEmbed(dados){
 
 
-
     const embed = new EmbedBuilder()
 
 
-
     .setColor(
-
         config.corEmbed
-
     )
 
 
     .setTitle(
-
-        "📢 NOVO AVISO ENVIADO"
-
+        "📢 NOVO COMUNICADO ENVIADO"
     )
 
 
     .setDescription(
 
 `
-👤 **Responsável:**
+━━━━━━━━━━━━━━━━━━━━━━
+
+👤 **Responsável**
 ${dados.responsavel}
 
-📨 **Membros:**
-${dados.total}
+📊 **Estatísticas do Envio**
 
-✅ **Enviados:**
-${dados.enviados}
+👥 **Destinatários:**
+${dados.total} membros
 
-⚠️ **Falhas:**
-${dados.falhas}
+✅ **Entregues:**
+${dados.enviados} membros
 
-📝 **Aviso:**
+⚠️ **Não entregues:**
+${dados.falhas} membros
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📝 **Conteúdo do Aviso**
+
 ${dados.aviso}
-`
 
+━━━━━━━━━━━━━━━━━━━━━━
+
+🕒 **Enviado em:**
+<t:${Math.floor(Date.now() / 1000)}:d> às <t:${Math.floor(Date.now() / 1000)}:t>
+
+`
     )
+
 
     .setFooter({
 
         text:
-
-        `${config.nomeServidor} • Sistema de Avisos`
+        `${config.nomeServidor} • Sistema Oficial de Comunicados`
 
     })
 
@@ -65,7 +70,6 @@ ${dados.aviso}
 
 
     return embed;
-
 
 
 }
