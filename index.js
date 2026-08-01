@@ -4,6 +4,11 @@ import express from "express";
 
 dotenv.config();
 
+
+// ===============================
+// SERVIDOR WEB PARA O RENDER
+// ===============================
+
 const app = express();
 
 app.get("/", (req, res) => {
@@ -15,6 +20,10 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 
+// ===============================
+// CONFIGURAÇÃO DO BOT DISCORD
+// ===============================
+
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -25,9 +34,17 @@ const client = new Client({
 });
 
 
+// ===============================
+// BOT ONLINE
+// ===============================
+
 client.once("ready", () => {
     console.log(`✅ ${client.user.tag} online`);
 });
 
+
+// ===============================
+// LOGIN
+// ===============================
 
 client.login(process.env.TOKEN);
