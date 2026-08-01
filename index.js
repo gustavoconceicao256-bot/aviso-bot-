@@ -6,10 +6,8 @@ import {
 
 import dotenv from "dotenv";
 
-import ready from "./events/ready.js";
-import interactionCreate from "./events/interactionCreate.js";
-
-import avisospv from "./commands/avisospv.js";
+import ready from "./Eventos/ready.js";
+import interactionCreate from "./Eventos/interactionCreate.js";
 
 
 dotenv.config();
@@ -20,7 +18,10 @@ const client = new Client({
     intents:[
 
         GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMembers
+
+        GatewayIntentBits.GuildMembers,
+
+        GatewayIntentBits.DirectMessages
 
     ]
 
@@ -29,13 +30,6 @@ const client = new Client({
 
 
 client.commands = new Collection();
-
-
-
-client.commands.set(
-    avisospv.data.name,
-    avisospv
-);
 
 
 
