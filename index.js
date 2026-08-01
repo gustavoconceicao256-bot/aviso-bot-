@@ -15,10 +15,6 @@ app.get("/", (req, res) => {
     res.send("Bot AVISO FAC GTT online");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("🌐 Servidor web iniciado");
-});
-
 
 // ===============================
 // CONFIGURAÇÃO DO BOT DISCORD
@@ -44,7 +40,16 @@ client.once("ready", () => {
 
 
 // ===============================
-// LOGIN
+// SERVIDOR RENDER ONLINE
+// ===============================
+
+app.listen(process.env.PORT || 3000, () => {
+    console.log("🌐 Servidor web iniciado");
+});
+
+
+// ===============================
+// LOGIN DISCORD
 // ===============================
 
 client.login(process.env.TOKEN);
