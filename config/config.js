@@ -59,7 +59,7 @@ export default {
     // SISTEMA DE TESTE
     // ===============================
 
-    MODO_TESTE: true,
+    MODO_TESTE: false,
 
 
     // Seu ID do Discord
