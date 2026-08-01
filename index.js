@@ -6,8 +6,8 @@ import {
 
 import dotenv from "dotenv";
 
-import ready from "./Eventos/ready.js";
-import interactionCreate from "./Eventos/interactionCreate.js";
+import ready from "./events/ready.js";
+import interactionCreate from "./events/interactionCreate.js";
 
 
 dotenv.config();
