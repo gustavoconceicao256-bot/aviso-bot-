@@ -1,5 +1,5 @@
 
-import config from "../configuração/config.js";
+import config from "../config/config.js";
 
 
 export function verificarPermissao(member){
