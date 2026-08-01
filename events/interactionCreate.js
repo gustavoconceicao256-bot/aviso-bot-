@@ -135,7 +135,9 @@ try {
 
                 interaction.guild,
 
-                texto
+                texto,
+
+                interaction.user
 
             );
 
