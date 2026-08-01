@@ -5,7 +5,7 @@ import {
 
 import dotenv from "dotenv";
 
-import avisospv from "./commands/avisospv.js";
+import avisospv from "./avisospv.js";
 
 
 dotenv.config();
@@ -14,9 +14,7 @@ dotenv.config();
 
 const comandos = [
 
-
     avisospv.data.toJSON()
-
 
 ];
 
@@ -24,11 +22,9 @@ const comandos = [
 
 const rest = new REST({
 
-    version:"10"
+    version: "10"
 
-})
-
-.setToken(
+}).setToken(
 
     process.env.TOKEN
 
@@ -36,7 +32,7 @@ const rest = new REST({
 
 
 
-try{
+try {
 
 
     console.log(
@@ -55,7 +51,6 @@ try{
 
         ),
 
-
         {
 
             body: comandos
@@ -72,7 +67,7 @@ try{
 
 
 
-}catch(error){
+} catch(error) {
 
 
     console.error(error);
