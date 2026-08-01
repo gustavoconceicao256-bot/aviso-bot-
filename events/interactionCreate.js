@@ -16,6 +16,9 @@ import {
 } from "../utils/enviarAvisos.js";
 
 
+import config from "../config/config.js";
+
+
 
 export default async function interactionCreate(interaction, client){
 
@@ -38,6 +41,31 @@ try {
         if(interaction.commandName === "avisospv"){
 
 
+
+            // ===============================
+            // VERIFICA CANAL PERMITIDO
+            // ===============================
+
+            if(interaction.channel.id !== config.canalAvisos){
+
+
+                return interaction.reply({
+
+                    content:
+                    "❌ Este comando só pode ser utilizado no canal oficial de avisos.",
+
+                    ephemeral:true
+
+                });
+
+
+            }
+
+
+
+            // ===============================
+            // VERIFICA PERMISSÃO
+            // ===============================
 
             if(!verificarPermissao(interaction.member)){
 
