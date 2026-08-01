@@ -1,30 +1,120 @@
-
 import {
-    SlashCommandBuilder
+
+    EmbedBuilder,
+
+    ActionRowBuilder,
+
+    ButtonBuilder,
+
+    ButtonStyle
+
 } from "discord.js";
 
 
-export default {
-
-
-data:
-
-new SlashCommandBuilder()
-
-.setName("avisospv")
-
-.setDescription(
-    "Enviar aviso oficial para todos os membros"
-),
+import config from "../configuração/config.js";
 
 
 
-async execute(interaction){
+export function criarAvisoEmbed(aviso){
+
+
+
+    const embed = new EmbedBuilder()
+
+
+
+    .setColor(
+
+        config.corEmbed
+
+    )
+
+
+    .setTitle(
+
+        "📢 SISTEMA DE AVISO GTT"
+
+    )
+
+
+    .setDescription(
+
+        aviso
+
+    )
+
+
+    .setThumbnail(
+
+        config.gifThumbnail
+
+    )
+
+
+    .setImage(
+
+        config.gifBanner
+
+    )
+
+
+    .setFooter({
+
+        text:
+
+        `${config.nomeServidor} • Comunicado Oficial`
+
+    })
+
+
+    .setTimestamp();
+
+
+
+
+
+    const botao = new ActionRowBuilder()
+
+    .addComponents(
+
+
+        new ButtonBuilder()
+
+        .setLabel(
+            "Abrir Servidor"
+        )
+
+        .setEmoji(
+            "🔗"
+        )
+
+        .setStyle(
+            ButtonStyle.Link
+        )
+
+        .setURL(
+
+            config.conviteServidor
+
+        )
+
+
+    );
+
+
+
+
+    return {
+
+
+        embeds:[embed],
+
+
+        components:[botao]
+
+
+    };
 
 
 
 }
-
-
-
-};
