@@ -1,5 +1,4 @@
-
-export default async function ready(client){
+export default function ready(client){
 
 
     console.log(
