@@ -3,11 +3,11 @@ export default {
 
     cargosPermitidos:[
 
-        "ID_CARGO_00",
-        "ID_CARGO_01",
-        "ID_CARGO_02",
-        "ID_LIDER_TATICO",
-        "ID_GERENTE_GERAL"
+        "1521984073969569883",
+        "1522086542716305548",
+        "1522086730008629289",
+        "1460499655640092780",
+        "1460375600681324668"
 
     ],
 
@@ -15,7 +15,7 @@ export default {
 
     canalLogs:
 
-    "ID_CANAL_LOGS",
+    "1533097228430999694",
 
 
 
@@ -39,13 +39,13 @@ export default {
 
     conviteServidor:
 
-    "LINK_CONVITE_SERVIDOR",
+    "https://discord.gg/AgkxQMPCk",
 
 
 
     nomeServidor:
 
-    "GTT"
+    "FAC GTT"
 
 
 };
