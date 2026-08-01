@@ -1,6 +1,6 @@
-import config from "../configuração/config.js";
+import config from "../config/config.js";
 
-import { criarLogEmbed } from "../Embeds/logEmbed.js";
+import { criarLogEmbed } from "../embeds/logEmbed.js";
 
 
 
