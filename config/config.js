@@ -12,32 +12,40 @@ export default {
     ],
 
 
+
     canalLogs:
+
     "ID_CANAL_LOGS",
 
 
 
     corEmbed:
+
     "#7C3AED",
 
 
 
     gifBanner:
+
     "https://imgur.com/panFF7o",
 
 
 
     gifThumbnail:
+
     "https://imgur.com/panFF7o",
 
 
 
     conviteServidor:
-    "SEU_CONVITE_AQUI",
+
+    "LINK_CONVITE_SERVIDOR",
 
 
 
     nomeServidor:
+
     "GTT"
+
 
 };
